@@ -1,0 +1,46 @@
+*
+!.gitignore
+# Directorios y archivos generados automáticamente
+/vendor
+/node_modules
+/public/storage
+/storage/*.log
+/storage/*.key
+/storage/debugbar
+/storage/oauth-private.key
+/storage/oauth-public.key
+/storage/framework/*
+!storage/framework/.gitignore
+/storage/logs/*
+!storage/logs/.gitignore
+/bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+# Archivos de configuración sensibles
+.env
+.env.example
+.env.*.backup
+
+# Archivos del IDE y del sistema operativo
+.idea/
+.vscode/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+._*
+
+# Dependencias de Composer y NPM
+composer.phar
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Caché de Laravel y migraciones
+.phpunit.result.cache
+.phpstorm.meta.php
+
+# Archivos de cobertura de código
+coverage/
+.phpunit.cache/
+*.lcov
